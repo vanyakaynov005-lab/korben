@@ -2,8 +2,10 @@ import discord
 from discord.ext import tasks, commands
 import sqlite3
 import time
+import os
 
-TOKEN = "MTU0NTAyMjIzNzg5ODE4MjY4Ng.G7Gkt6.pH_CEA76CNWU9zJcNlai36KjDOMaOSSd4GYG60"
+TOKEN = os.getenv("TOKEN")
+
 GUILD_ID = 804372207069429782  # Вставь ID своего сервера Discord
 
 # Твоя сетка: количество часов -> ID роли
